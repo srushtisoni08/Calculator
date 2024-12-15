@@ -10,29 +10,29 @@
     <div class="cal">
         <input id="display" readonly>
         <div id="keys">
-            <button onclick="clear()" id="clear">C</button>
-            <button onclick="operate('()')" id="bracket">()</button>
-            <button onclick="operate('%')" id="modulo">%</button>
-            <button onclick="operate('/')" id="div">/</button>
+            <button onclick="display.value = ''" class="operator">C</button>
+            <button onclick="brackets()" class="operator">()</button>
+            <button onclick="operate(' % ')" class="operator">%</button>
+            <button onclick="operate(' / ')" class="operator">/</button>
             
             <button onclick="operate('7')" class="number">7</button>
             <button onclick="operate('8')" class="number">8</button>
             <button onclick="operate('9')" class="number">9</button>
-            <button onclick="operate('*')" id="mul">*</button>
+            <button onclick="operate(' * ')" class="operator">*</button>
             
             <button onclick="operate('4')" class="number">4</button>
             <button onclick="operate('5')" class="number">5</button>
             <button onclick="operate('6')" class="number">6</button>
-            <button onclick="operate('-')" id="sub">-</button>
+            <button onclick="operate(' - ')" class="operator">-</button>
             
             <button onclick="operate('1')" class="number">1</button>
             <button onclick="operate('2')" class="number">2</button>
             <button onclick="operate('3')" class="number">3</button>
-            <button onclick="operate('+')" id="add">+</button>
+            <button onclick="operate(' + ')" class="operator">+</button>
             
-            <button onclick="operate('+/-')" id="sign">+/-</button>
+            <button onclick="operate('+/-')" class="operator">+/-</button>
             <button onclick="operate('0')" class="number">0</button>
-            <button onclick="operate('.')" id="dot">.</button>
+            <button onclick="operate('.')" class="operator">.</button>
             <button onclick="result()" id="equal">=</button>
         </div>
     </div>
